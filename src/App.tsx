@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import Navbar from "./components/Navbar"
+import CoinPage from "./pages/MainPage"
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      
-    </>
+    <div>
+       <Navbar/>
+       <CoinPage/>
+    </div>
   )
 }
 
