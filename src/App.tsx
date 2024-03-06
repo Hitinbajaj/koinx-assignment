@@ -1,11 +1,10 @@
-import Navbar from "./components/Navbar"
-import CoinPage from "./pages/MainPage"
+
+import MainPage from "./pages/MainPage"
 
 function App() {
   return (
-    <div>
-       <Navbar/>
-       <CoinPage/>
+    <div className="w-screen">
+       <MainPage/>
     </div>
   )
 }
