@@ -19,9 +19,7 @@ const Crypto : React.FC<DashboardProps> = ({currency = 'bitcoin'})=> {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<{
-            currency: CryptoData;
-        }>(
+        const response = await axios.get(
           `https://api.coingecko.com/api/v3/simple/price?ids=${currency}&vs_currencies=inr%2Cusd&include_24hr_change=true`
         );
         console.log(response.data);
@@ -35,7 +33,7 @@ const Crypto : React.FC<DashboardProps> = ({currency = 'bitcoin'})=> {
     const interval = setInterval(fetchData, 10000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [currency]);
 
   return (
     <div className="bg-white h-max rounded-lg my-5 p-6">
