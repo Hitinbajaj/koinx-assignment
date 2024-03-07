@@ -1,11 +1,13 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 
-interface PageHolderProps {}
+interface PageHolderProps {
+  currentPage?: string;
+}
 
-const PageHolder: React.FC<PageHolderProps> = () => {
+const PageHolder: React.FC<PageHolderProps> = ({ currentPage = 'Bitcoin' }) => {
   const location = useLocation();
-
+  console.log(currentPage);
   return (
     <div className="flex lg:pl-14 ml-4 pt-4">
       <div className="text-sm text-[#3E5765]">Cryptocurrencies</div>
