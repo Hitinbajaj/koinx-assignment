@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import TradingView from "./TradingView";
 import btcimg from "../assets/btc.png";
 import ethimg from "../assets/eth.png";
 import opulimg from "../assets/opul.png";
