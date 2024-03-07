@@ -15,7 +15,7 @@ function Suggestions() {
         console.error("Error fetching data:", error);
       });
   }, []);
-  console.log(cryptoData);
+  
 
   return (
     <div className="bg-white h-max mt-10 lg:p-14 p-8">
@@ -46,7 +46,7 @@ function Suggestions() {
 }
 
 function CryptoCard({ cryptoData }: any) {
-  console.log("Sparkline URL:", cryptoData.data.sparkline);
+  console.log(cryptoData.data.price);
   return (
     <div className="lg:w-[300px] rounded-2xl p-5 border-2 my-2 mr-2">
       <div className="flex items-center space-x-2">
