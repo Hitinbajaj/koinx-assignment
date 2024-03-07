@@ -12,7 +12,6 @@ import Team from "../components/Team";
 import TrendingCoins from "../components/TrendingCoins";
 import Tokenomics from "../components/Tokennomics";
 import Suggestions from "../components/Suggestions";
-import TradingView from "../components/TradingView";
 
 interface MainPageProps {
     id?: string;
